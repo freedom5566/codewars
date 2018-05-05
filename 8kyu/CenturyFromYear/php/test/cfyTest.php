@@ -1,5 +1,7 @@
 <?php
 
+use PHPUnit\Framework\TestCase;
+require "./a.php";
 class testExample extends TestCase
 {
   private function check($year)
