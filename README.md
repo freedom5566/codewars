@@ -13,5 +13,7 @@ https://github.com/softnshare/kata
 
 
 # 我的PHP環境
-PHP7.2
+PHP7.2      
+
+
 PHPUnit 6.5.5
