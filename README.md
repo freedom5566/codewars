@@ -12,6 +12,10 @@
 https://github.com/softnshare/kata
 
 
+# 5/28
+
+升到6kyu，8kyu的題目還沒解完阿阿阿阿阿阿阿阿，強迫症發作中
+
 # 我的PHP環境
 PHP7.2      
 
