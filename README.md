@@ -1,4 +1,5 @@
-[![PHP Badges](https://www.codewars.com/users/agda/badges/micro)](https://www.codewars.com/docs/ranking-and-honor-1)  
+[![PHP Badges](https://www.codewars.com/users/agda/badges/micro)](https://www.codewars.com/docs/ranking-and-honor-1) 
+
 # 加強一下PHP
 
 先把8kyu全刷了看看
@@ -15,6 +16,9 @@ https://github.com/softnshare/kata
 # 5/28
 
 升到6kyu，8kyu的題目還沒解完阿阿阿阿阿阿阿阿，強迫症發作中
+
+PHP 8kyu還有38題
+
 
 # 我的PHP環境
 PHP7.2      
