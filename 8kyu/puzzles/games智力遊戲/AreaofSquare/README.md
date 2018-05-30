@@ -12,5 +12,5 @@ Use π = Math.PI (M_PI in PHP)
 Round to two decimals.
 
 
-我真的看不懂這題QQ
+給一個弧長求出正方形面積
 
