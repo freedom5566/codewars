@@ -9,9 +9,13 @@
 但現在好像沒人了嗚嗚
 
 
-
 https://github.com/softnshare/kata
 
+# JS
+
+JS 8kyu的題數有三百多題 ......是PHP3倍欸
+
+幫PHPQQ
 
 # 5/28
 
