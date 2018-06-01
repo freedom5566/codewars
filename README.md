@@ -13,7 +13,7 @@ https://github.com/softnshare/kata
 
 # JS
 
-JS 8kyu的題數有三百多題 ......是PHP3倍欸
+JS 8kyu的題數有三百多題 ......是PHP3.5倍欸
 
 幫PHPQQ
 
