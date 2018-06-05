@@ -1,5 +1,39 @@
 [![PHP Badges](https://www.codewars.com/users/agda/badges/micro)](https://www.codewars.com/docs/ranking-and-honor-1) 
 
+# 目錄
+
+1. codewars
+    - 8kyu
+        - alogorithms
+            - 陣列
+            - 布林
+        - bugs
+            - 基礎
+            - 函數
+            - 整數
+            - 迴圈
+            - 條件
+        - fundamentals
+            - 基礎
+            - 陣列
+            - 基本語言功能
+            - 布林
+            - 條件
+            - 日期和時間
+            - 格式化
+            - 函數程式
+            - 指令式程式
+            - 迴圈
+            - 數學
+            - 數字
+            - 字串
+             
+            
+        - pussles
+            - 智力遊戲
+    - UVA
+        - 一星
+
 # 加強一下PHP
 
 先把8kyu全刷了看看
