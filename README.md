@@ -1,5 +1,6 @@
 [![PHP Badges](https://www.codewars.com/users/agda/badges/micro)](https://www.codewars.com/docs/ranking-and-honor-1) 
 
+突然覺得我是不是要介紹一下codewars的用法阿？ 
 
 # 加強一下PHP
 
