@@ -9,3 +9,7 @@ You should not remove or add elements from/to the array.
 但是每個字串的每個字母都要比對
 
 後來發現php直接用sort就好哈哈
+
+最佳實踐直接用implode搞定
+
+我真的太大意了......
