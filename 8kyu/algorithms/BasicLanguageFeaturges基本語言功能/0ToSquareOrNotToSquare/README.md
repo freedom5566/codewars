@@ -17,3 +17,9 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 I have also created other katas. Take a look if you enjoyed this kata!
 
 這題有漲姿勢
+
+這題有看到**的寫法，但其實也就是pow不是位元運算
+
+我是覺得**容易混淆
+
+而且PHP5.6以上才能用
