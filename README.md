@@ -1,5 +1,18 @@
 [![PHP Badges](https://www.codewars.com/users/agda/badges/micro)](https://www.codewars.com/docs/ranking-and-honor-1) 
 
+
+# 目錄
+
+分類說明
+
+通常是根據題目的第一個標籤決定哪個分類，根據第二個標籤決定屬於該分類的哪個類型題目
+- 8kyu
+    - [algorithms 演算法](https://github.com/freedom5566/All-embracing/tree/master/%E8%A7%A3%E9%A1%8C/codewars/8kyu/algorithms)
+    - [bugs 抓BUG](https://github.com/freedom5566/All-embracing/tree/master/%E8%A7%A3%E9%A1%8C/codewars/8kyu/bugs)
+    - [fundamentals 基礎](https://github.com/freedom5566/All-embracing/tree/master/%E8%A7%A3%E9%A1%8C/codewars/8kyu/fundamentals)
+    - [puzzles 智力遊戲](https://github.com/freedom5566/All-embracing/tree/master/%E8%A7%A3%E9%A1%8C/codewars/8kyu/puzzles)
+
+    
 突然覺得我是不是要介紹一下codewars的用法阿？ 
 
 資料夾前面+0是還沒有增加到目錄的題目
@@ -39,13 +52,3 @@ PHP7.2
 
 PHPUnit 6.5.5
 
-# 目錄
-
-分類說明
-
-通常是根據題目的第一個標籤決定哪個分類，根據第二個標籤決定屬於該分類的哪個類型題目
-- 8kyu
-    - [algorithms 演算法](https://github.com/freedom5566/All-embracing/tree/master/%E8%A7%A3%E9%A1%8C/codewars/8kyu/algorithms)
-    - [bugs 抓BUG](https://github.com/freedom5566/All-embracing/tree/master/%E8%A7%A3%E9%A1%8C/codewars/8kyu/bugs)
-    - [fundamentals 基礎](https://github.com/freedom5566/All-embracing/tree/master/%E8%A7%A3%E9%A1%8C/codewars/8kyu/fundamentals)
-    - [puzzles 智力遊戲](https://github.com/freedom5566/All-embracing/tree/master/%E8%A7%A3%E9%A1%8C/codewars/8kyu/puzzles)
