@@ -6,6 +6,9 @@
 分類說明
 
 通常是根據題目的第一個標籤決定哪個分類，根據第二個標籤決定屬於該分類的哪個類型題目
+
+如果沒有第二個標籤就是放在第一個標籤分類的基礎資料夾
+
 - 8kyu
     - [algorithms 演算法](https://github.com/freedom5566/All-embracing/tree/master/%E8%A7%A3%E9%A1%8C/codewars/8kyu/algorithms)
     - [bugs 抓BUG](https://github.com/freedom5566/All-embracing/tree/master/%E8%A7%A3%E9%A1%8C/codewars/8kyu/bugs)
