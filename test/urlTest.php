@@ -63,16 +63,16 @@ class linktest
 
     /**
      * linktest function
-     *
+     * test 是否有效連結
      * @param array $arr
      * @return void
      * @date 2018 08 24
      */
-    public function linktest(array $arr)
+    public function linktest()
     {
-
+        //return $this->verbal($this->url);
     }
 }
-(new linktest())->linktest();
+print_r((new linktest())->linktest());
 
 
