@@ -1,5 +1,8 @@
 {
     "require-dev": {
         "verbalexpressions/php-verbal-expressions": "^1.0"
+    },
+    "require": {
+        "php": "^7.2"
     }
 }
