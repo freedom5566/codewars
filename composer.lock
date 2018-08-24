@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "1aa5631bd787e72d68f2b382a04f259b",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "verbalexpressions/php-verbal-expressions",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/VerbalExpressions/PHPVerbalExpressions.git",
+                "reference": "82ee5aee666394b2a02c45bc97952bdb0e2363e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/VerbalExpressions/PHPVerbalExpressions/zipball/82ee5aee666394b2a02c45bc97952bdb0e2363e1",
+                "reference": "82ee5aee666394b2a02c45bc97952bdb0e2363e1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "* >=4",
+                "squizlabs/php_codesniffer": "^3.1"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "VerbalExpressions\\PHPVerbalExpressions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP Regular expressions made easy",
+            "time": "2018-01-07T23:41:06+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
