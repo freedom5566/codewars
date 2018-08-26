@@ -9,7 +9,7 @@ use VerbalExpressions\PHPVerbalExpressions\VerbalExpressions;
 class linktest
 {
     private $url=array();
-
+    private $urlInfo=array();
     /**
      * __construct function
      * 取得所有有效連結
@@ -55,10 +55,11 @@ class linktest
                     $i++;
                 } else {
                     $j++;
+                    $this->urlInfo[]=$this->errorUrl($url);
                 }
             }
         }
-        return [$i,$j];
+        return [$i,$j,$this->urlInfo];
     }
 
     /**
@@ -70,9 +71,30 @@ class linktest
      */
     public function linktest()
     {
-        //return $this->verbal($this->url);
+        return $this->verbal($this->url);
+    }
+
+    /**
+     * errorUrl function
+     * 取出錯誤的連結名稱
+     * @param string $arr
+     * @return $errorUrlname
+     * @date 2018 08 24
+     */
+    public function errorUrl(string $str)
+    {
+        $data=explode('/',$str);
+        return 'errorUrl:'.$data[count($data)-3]." ".end($data);
+
     }
 }
-print_r((new linktest())->linktest());
+$data=(new linktest())->linktest();
+echo '正確連結有'."\033[32m{$data[0]}\033[0m".'個 '.'不正確連結有'."\033[31m{$data[1]}\033[0m".'個 '.PHP_EOL;
+if($data[1]===0) {
+    echo '太棒啦~沒有不正確的連結';
+    exit;
+}
 
-
+echo "\033[32m";
+print_r($data[2]);
+echo "\033[0m";
