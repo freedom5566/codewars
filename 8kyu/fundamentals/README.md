@@ -29,7 +29,7 @@
         - 找出陣列的元素，最簡單的方式是用array_search
     - [Sumofpositive](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/arrays%E9%99%A3%E5%88%97/Sumofpositive)
         - 把所有正整數相加，略掉負數，用array_filter跟array_sum
-    - [I love you](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/arrays%E9%99%A3%E5%88%97/0ILoveYou)
+    - [I love you](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/arrays%E9%99%A3%E5%88%97/ILoveYou)
         - 用%取餘數就搞定直接回傳陣列
     - [Beginner-ReduceButGrow](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/arrays%E9%99%A3%E5%88%97/Beginner-ReduceButGrow)
         - 累乘
