@@ -13,4 +13,4 @@
         - 把數字轉成美元，用sprintf或是money_format（不過這題程度不需要）
 
 
-[回到解題首頁codewars頁面](https://github.com/freedom5566/codewars/tree/master)
+[回到解題首頁codewars頁面](https://github.com/freedom5566/codewars)

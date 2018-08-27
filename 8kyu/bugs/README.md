@@ -21,4 +21,4 @@
             - 純修bug
 
             
-[回到解題首頁codewars頁面](https://github.com/freedom5566/codewars/tree/master)
+[回到解題首頁codewars頁面](https://github.com/freedom5566/codewars)
