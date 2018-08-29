@@ -3,7 +3,9 @@ namespace freedom5566\codewars\AutobulidDirectory;
 
 class Buildirectory
 {
+    // 所有目錄陣列
     private $dirList=array();
+    // 未建立目錄陣列
     private $notDirlist=array();
 
     public function __construct()
