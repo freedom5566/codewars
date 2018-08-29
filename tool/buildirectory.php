@@ -3,7 +3,10 @@ namespace freedom5566\codewars\AutobulidDirectory;
 
 class Buildirectory
 {
-    public function getdirectory()
+    private $dirList=array();
+    private $notDirlist=array();
+
+    public function __construct()
     {
         $kyu8text[] = './8kyu/algorithms/';
         $kyu8text[] = './8kyu/bugs/';
@@ -14,8 +17,8 @@ class Buildirectory
             $scanned_directory = array_diff(scandir($kyu8text[$i], 1), array('..', '.'));
             $tmpData=explode('/', $kyu8text[$i]);
             for ($j=0;$j<count($scanned_directory);$j++) {
-                if ('README.md'!=$scanned_directory[$j]) {
-                    $data[$tmpData[1].'-'.$tmpData[2]][$scanned_directory[$j]] = 
+                if ('README.md'!==$scanned_directory[$j]) {
+                    $data[$tmpData[1].'/'.$tmpData[2]][$scanned_directory[$j]] = 
                     array_diff(
                         scandir($kyu8text[$i].$scanned_directory[$j], 1), 
                         array('..', '.')
@@ -23,8 +26,30 @@ class Buildirectory
                 }
             }
         }
-        print_r($data);
+        $this->dirList=$data;
+    }
+    public function showAlldirlist()
+    {
+        return $this->dirList;
+    }
+    public function showNotdirlist()
+    {
+        $data=array();
+        // $idx 上層目錄 $value下層目錄
+        // 三層foreach 為啥覺得我在搞自己=_=
+        foreach($this->dirList as $idx =>$value){
+            foreach($value as $dir =>$dirName){
+                foreach($dirName as $notdircodewars){
+                    if ('0'===$notdircodewars[0]){
+                        $data[$idx][$dir][]=$notdircodewars;
+                    }
+                }
+            }
+            
+        }
+        $this->notDirlist=$data;
+        return $data;
     }
 }
 
-print_r((new Buildirectory)->getdirectory());
+print_r((new Buildirectory)->showNotdirlist());
