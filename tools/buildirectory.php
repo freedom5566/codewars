@@ -29,6 +29,8 @@ class Buildirectory
             }
         }
         $this->dirList=$data;
+        $this->notDirlist=$this->showNotdirlist();
+
     }
     public function showAlldirlist()
     {
@@ -49,9 +51,21 @@ class Buildirectory
             }
             
         }
-        $this->notDirlist=$data;
+        // $this->notDirlist=$data;
         return $data;
+    }
+    public function openNotdir()
+    {
+        foreach ($this->notDirlist as $idx => $dir) {
+            foreach($dir as $notDir => $dirName) {
+                foreach ($dirName as $layer){
+                    echo $idx.'/'.$notDir.'/'.$layer.PHP_EOL;
+                }
+            }
+        }
+        // return $this->notDirlist;
     }
 }
 
-print_r((new Buildirectory)->showNotdirlist());
+
+print_r((new Buildirectory)->openNotdir());
