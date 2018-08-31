@@ -59,6 +59,7 @@ class Buildirectory
         foreach ($this->notDirlist as $idx => $dir) {
             foreach($dir as $notDir => $dirName) {
                 foreach ($dirName as $layer){
+                    //8kyu/fundamentals/基礎/0Age_Range_Compatibility_Equation
                     echo $idx.'/'.$notDir.'/'.$layer.PHP_EOL;
                 }
             }
