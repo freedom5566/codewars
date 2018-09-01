@@ -68,5 +68,43 @@ class Buildirectory
     }
 }
 
+class sync {
+    // showAlldirlist 所有的資料夾都印出來
+    // showNotdirlist 印出未建立目錄資料夾的陣列
+    // openNotdir 印出所有目錄下未建立目錄的資料夾路徑
+    public function show()
+    {
+        return (new Buildirectory)->showNotdirlist(); 
+    }
 
-print_r((new Buildirectory)->openNotdir());
+    public function syncDir()
+    {
+        $kyu8text[] = './8kyu/algorithms/README.md';
+        $kyu8text[] = './8kyu/bugs/README.md';
+        $kyu8text[] = './8kyu/fundamentals/README.md';
+        $kyu8text[] = './8kyu/puzzles/README.md';
+        for($i=0;$i<count($kyu8text);$i++) {
+            $data=$this->readline($kyu8text[$i]);
+            print_r($data);    
+        }
+
+    }
+    public function readline(string $path)
+    {
+        $file = fopen("$path", "r");
+        $user=array();
+        $i=0;
+        //輸出文字中所有的行，直到檔案結束為止。
+        while(! feof($file))
+        {
+            $user[$i]= fgets($file);//fgets()函式從檔案指標中讀取一行
+            $i++;
+        }
+        fclose($file);
+        return array_filter($user); // 當內容是空或null不輸出
+        
+    }
+}
+
+
+(new sync)->syncDir();
