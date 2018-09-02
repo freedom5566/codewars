@@ -104,7 +104,61 @@ class sync {
         return array_filter($user); // 當內容是空或null不輸出
         
     }
+
+    public function testwrite()
+    {
+        error_reporting(E_ALL); 
+        ini_set('display_errors', 1);
+        $config = 'test.txt';
+        if(!file($config)) exit('找不到文件');
+
+        
+        $file=fopen($config,"r") or exit("Unable to open file!");
+        //echo 'asdf';
+
+        if($file==null) exit('gg');
+
+        $date = date("F j, Y");
+        $time = date("H:i:s");
+        
+        $username = "user";
+        $email = "email";
+        $password = "pass";
+        $insertPos=0;  // variable for saving //Users position
+        $newuser = $username . " " . $password . " " . $email . " " . $date . " " .    $time."\r\n";   // I added new line after new user
+        $line=fgets($file);
+        
+        try{
+                while (!feof($line)) {
+                echo '13';
+                if (strpos($line, '//Users')!==false) { 
+                    $insertPos=ftell($file);    // ftell will tell the position where the pointer moved, here is the new line after //Users.
+                    $newline =  $newuser;
+                 } else {    
+                    $newline.=$line;   // append existing data with new data of user
+                }
+            }
+        } catch (Exception $e) {
+            echo 'Caught exception: ',  $e->getMessage().PHP_EOL;
+        } finally{
+            fclose($file);
+
+        }
+        // fseek($file,$insertPos);   // move pointer to the file position where we saved above 
+        // fwrite($file, $newline);
+
+    }
+
+    public function testwrite2()
+    {
+        $fileRecs = 0;
+        $file = new \SplFileObject(__DIR__.'/test.txt', 'r+');
+        $file->seek(PHP_INT_MAX);
+        $fileRecs = $file->key()+1;
+        // print_r($file->key());
+        echo $fileRecs;
+    }
 }
 
 
-(new sync)->syncDir();
+(new sync)->testwrite2();
