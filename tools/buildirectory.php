@@ -153,10 +153,14 @@ class sync {
     {
         $fileRecs = 0;
         $file = new \SplFileObject(__DIR__.'/test.txt', 'r+');
-        $file->seek(PHP_INT_MAX);
-        $fileRecs = $file->key()+1;
+        // 看了文件還是沒懂為甚麼加了這行就能計算行數
+        // 搜尋行數 9223372036854775807??
+        // 也沒有返回值
+        $file->seek(PHP_INT_MAX); 
+        $fileRecs = $file->key()+1; // 從0開始
         // print_r($file->key());
-        echo $fileRecs;
+        echo $fileRecs.PHP_EOL;
+        echo PHP_INT_MAX.PHP_EOL;
     }
 }
 
