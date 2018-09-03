@@ -164,7 +164,44 @@ class sync {
         echo $fileRecs.PHP_EOL;
         echo PHP_INT_MAX.PHP_EOL;
     }
+    public function testwrite3()
+    {
+        $output='';
+        $file = new \SplFileObject(__DIR__.'/test.txt', 'r+');
+        while (!$file->eof()) {
+            $line = $file->fgets();
+            // var_dump(trim($line));
+            if (trim($line) == '約拿') {
+                for($i=0; $i<1e3;$i++){
+                    
+                    $line .= PHP_EOL.'jojo'.PHP_EOL;
+                }
+            }
+            $output.=$line;
+        }
+        $file=null;
+        $file =new \SplFileObject(__DIR__.'/test.txt', 'w+');
+        $file->fwrite($output);
+    }
+        
+    
+    // https://stackoverflow.com/questions/13246597/how-to-read-a-large-file-line-by-line
+    // 讀大檔案
+    
+    public function testwrite4()
+    {
+        $fileData = function(){
+            $file = new \SplFileObject(__DIR__.'/test.txt', 'r+');
+            while (!$file->eof()) {
+                yield $file->fgets();
+            }
+        };
+        foreach ($fileData() as $line){
+                echo $line;
+        // print_r($fileData());
+        }
+    }
 }
-
-
+        
+        
 (new sync)->testwrite2();
