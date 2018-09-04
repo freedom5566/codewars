@@ -20,9 +20,9 @@ class Buildirectory
             $tmpData=explode('/', $kyu8text[$i]);
             for ($j=0;$j<count($scanned_directory);$j++) {
                 if ('README.md'!==$scanned_directory[$j]) {
-                    $data[$tmpData[1].'/'.$tmpData[2]][$scanned_directory[$j]] = 
+                    $data[$tmpData[1].'/'.$tmpData[2]][$scanned_directory[$j]] =
                     array_diff(
-                        scandir($kyu8text[$i].$scanned_directory[$j], 1), 
+                        scandir($kyu8text[$i].$scanned_directory[$j], 1),
                         array('..', '.')
                     );
                 }
@@ -30,7 +30,6 @@ class Buildirectory
         }
         $this->dirList=$data;
         $this->notDirlist=$this->showNotdirlist();
-
     }
     public function showAlldirlist()
     {
@@ -41,40 +40,43 @@ class Buildirectory
         $data=array();
         // $idx 上層目錄 $value下層目錄
         // 三層foreach 為啥覺得我在搞自己=_=
-        foreach($this->dirList as $idx =>$value){
-            foreach($value as $dir =>$dirName){
-                foreach($dirName as $notdircodewars){
-                    if ('0'===$notdircodewars[0]){
-                        $data[$idx][$dir][]=$notdircodewars;
+        foreach ($this->dirList as $idx =>$value) {
+            foreach ($value as $dir =>$dirName) {
+                foreach ($dirName as $notdircodewars) {
+                    if ('0'===$notdircodewars[0]) {
+
+
+                        $data[$idx][preg_replace("/[A-Za-z-]/", "", $dir)][]=$notdircodewars;
                     }
                 }
             }
-            
         }
         // $this->notDirlist=$data;
         return $data;
     }
     public function openNotdir()
     {
+        $data = array();
         foreach ($this->notDirlist as $idx => $dir) {
-            foreach($dir as $notDir => $dirName) {
-                foreach ($dirName as $layer){
+            foreach ($dir as $notDir => $dirName) {
+                foreach ($dirName as $layer) {
                     //8kyu/fundamentals/基礎/0Age_Range_Compatibility_Equation
-                    echo $idx.'/'.$notDir.'/'.$layer.PHP_EOL;
+                    $data[] = $idx.'/'.$notDir.'/'.$layer.PHP_EOL;
                 }
             }
         }
-        // return $this->notDirlist;
+        return $data;
     }
 }
 
-class sync {
+class sync
+{
     // showAlldirlist 所有的資料夾都印出來
     // showNotdirlist 印出未建立目錄資料夾的陣列
     // openNotdir 印出所有目錄下未建立目錄的資料夾路徑
     public function show()
     {
-        return (new Buildirectory)->showNotdirlist(); 
+        return (new Buildirectory)->showNotdirlist();
     }
 
     public function syncDir()
@@ -83,11 +85,10 @@ class sync {
         $kyu8text[] = './8kyu/bugs/README.md';
         $kyu8text[] = './8kyu/fundamentals/README.md';
         $kyu8text[] = './8kyu/puzzles/README.md';
-        for($i=0;$i<count($kyu8text);$i++) {
+        for ($i=0;$i<count($kyu8text);$i++) {
             $data=$this->readline($kyu8text[$i]);
-            print_r($data);    
+            print_r($data);
         }
-
     }
     public function readline(string $path)
     {
@@ -95,28 +96,30 @@ class sync {
         $user=array();
         $i=0;
         //輸出文字中所有的行，直到檔案結束為止。
-        while(! feof($file))
-        {
+        while (! feof($file)) {
             $user[$i]= fgets($file);//fgets()函式從檔案指標中讀取一行
             $i++;
         }
         fclose($file);
         return array_filter($user); // 當內容是空或null不輸出
-        
     }
 
     public function testwrite()
     {
-        error_reporting(E_ALL); 
+        error_reporting(E_ALL);
         ini_set('display_errors', 1);
         $config = 'test.txt';
-        if(!file($config)) exit('找不到文件');
+        if (!file($config)) {
+            exit('找不到文件');
+        }
 
         
-        $file=fopen($config,"r") or exit("Unable to open file!");
+        $file=fopen($config, "r") or exit("Unable to open file!");
         //echo 'asdf';
 
-        if($file==null) exit('gg');
+        if ($file==null) {
+            exit('gg');
+        }
 
         $date = date("F j, Y");
         $time = date("H:i:s");
@@ -128,25 +131,23 @@ class sync {
         $newuser = $username . " " . $password . " " . $email . " " . $date . " " .    $time."\r\n";   // I added new line after new user
         $line=fgets($file);
         
-        try{
-                while (!feof($line)) {
+        try {
+            while (!feof($line)) {
                 echo '13';
-                if (strpos($line, '//Users')!==false) { 
+                if (strpos($line, '//Users')!==false) {
                     $insertPos=ftell($file);    // ftell will tell the position where the pointer moved, here is the new line after //Users.
                     $newline =  $newuser;
-                 } else {    
+                } else {
                     $newline.=$line;   // append existing data with new data of user
                 }
             }
         } catch (Exception $e) {
             echo 'Caught exception: ',  $e->getMessage().PHP_EOL;
-        } finally{
+        } finally {
             fclose($file);
-
         }
-        // fseek($file,$insertPos);   // move pointer to the file position where we saved above 
+        // fseek($file,$insertPos);   // move pointer to the file position where we saved above
         // fwrite($file, $newline);
-
     }
 
     public function testwrite2()
@@ -158,7 +159,7 @@ class sync {
         // 也沒有返回值
         // 等等，好像懂了，先seek跳到92233720368547758007行，但是當然不可能這麼多行，指針就會停留在最後一行
         // 這時候再用key獲得當前行數，也就是文件最後一行的行數囉
-        $file->seek(PHP_INT_MAX); 
+        $file->seek(PHP_INT_MAX);
         $fileRecs = $file->key()+1; // 從0開始
         // print_r($file->key());
         echo $fileRecs.PHP_EOL;
@@ -167,15 +168,15 @@ class sync {
     public function testwrite3()
     {
         $output='';
+        $data = (new Buildirectory)->openNotdir();
         $file = new \SplFileObject(__DIR__.'/test.txt', 'r+');
         while (!$file->eof()) {
             $line = $file->fgets();
             // var_dump(trim($line));
             if (trim($line) == '約拿') {
-                for($i=0; $i<1e3;$i++){
-                    
-                    $line .= PHP_EOL.'jojo'.PHP_EOL;
-                }
+                for ($i=0;$i<10000;$i++) {
+                    $line .= PHP_EOL.implode($data).PHP_EOL;
+                }    
             }
             $output.=$line;
         }
@@ -183,11 +184,11 @@ class sync {
         $file =new \SplFileObject(__DIR__.'/test.txt', 'w+');
         $file->fwrite($output);
     }
-        
-    
+
     // https://stackoverflow.com/questions/13246597/how-to-read-a-large-file-line-by-line
+
     // 讀大檔案
-    
+
     public function testwrite4()
     {
         $fileData = function(){
@@ -197,11 +198,24 @@ class sync {
             }
         };
         foreach ($fileData() as $line){
-                echo $line;
-        // print_r($fileData());
+            echo $line;
         }
+        // print_r($fileData());
+    }
+    public function findTable(string $name) : string
+    {
+        $nametable = array(
+            "algorithms" => "# algorithms 演算法目錄",
+            "puzzles" => "# puzzles 智力遊戲",
+            "fundamentals" => "# fundamentals 基礎目錄",
+            "bug" => "# bugs 目錄"
+
+        );
+        return $nametable[$name] ?? $name;
     }
 }
-        
-        
-(new sync)->testwrite2();
+
+
+// (new sync)->syncDir();
+print_r((new sync)->show());
+// print_r((new sync)->findTable("bug"));
