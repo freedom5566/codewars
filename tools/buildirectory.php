@@ -44,8 +44,6 @@ class Buildirectory
             foreach ($value as $dir =>$dirName) {
                 foreach ($dirName as $notdircodewars) {
                     if ('0'===$notdircodewars[0]) {
-
-
                         $data[$idx][preg_replace("/[A-Za-z-]/", "", $dir)][]=$notdircodewars;
                     }
                 }
@@ -69,7 +67,7 @@ class Buildirectory
     }
 }
 
-class sync
+class readwritefile
 {
     // showAlldirlist 所有的資料夾都印出來
     // showNotdirlist 印出未建立目錄資料夾的陣列
@@ -176,7 +174,7 @@ class sync
             if (trim($line) == '約拿') {
                 for ($i=0;$i<10000;$i++) {
                     $line .= PHP_EOL.implode($data).PHP_EOL;
-                }    
+                }
             }
             $output.=$line;
         }
@@ -191,16 +189,59 @@ class sync
 
     public function testwrite4()
     {
-        $fileData = function(){
+        $fileData = function () {
             $file = new \SplFileObject(__DIR__.'/test.txt', 'r+');
             while (!$file->eof()) {
                 yield $file->fgets();
             }
         };
-        foreach ($fileData() as $line){
+        foreach ($fileData() as $line) {
             echo $line;
         }
         // print_r($fileData());
+    }
+    public function testwrite5(string $path) 
+    {
+        $output='';
+        $data = (new readwritefile)->show();
+        // print_r($data['8kyu/puzzles']);
+        // foreach ($data as $idx => $dir) {
+        //     echo $this->findTable(explode('/',$idx)[1]);
+        //     foreach ($dir as $notDir => $dirName) {
+        //         foreach ($dirName as $layer) {
+        //             //8kyu/fundamentals/基礎/0Age_Range_Compatibility_Equation
+                    
+        //         }
+        //     }
+        // }
+        $file = new \SplFileObject($path, 'r+');
+        $his=false;
+        while (!$file->eof()) {
+            $line = $file->fgets();
+            // var_dump(trim($line));
+            // if (trim($line) == '約拿') {
+            //     for ($i=0;$i<10000;$i++) {
+            //         $line .= PHP_EOL.implode($data).PHP_EOL;
+            //     }
+            // }
+            foreach ($data as $idx => $dir){
+                if(trim($line) === $this->findTable(explode('/',$idx)[1])){
+                    $his=true;
+                }
+                foreach($dir as $notDir => $dirName){
+                    if(trim($line)==="- ".$notDir && $his){
+                        foreach ($dirName as $layer) {
+                            $line.=PHP_EOL."    - ".$layer.PHP_EOL;
+                        }
+                    }
+                }
+            }
+            $output.=$line;
+            
+        }
+        $file=null;
+        $file =new \SplFileObject($path, 'w+');
+        $file->fwrite($output);
     }
     public function findTable(string $name) : string
     {
@@ -213,9 +254,29 @@ class sync
         );
         return $nametable[$name] ?? $name;
     }
+    
 }
 
+// class sync{
+    
+//     public function findTable(string $name) : string
+//     {
+//         $nametable = array(
+//             "algorithms" => "# algorithms 演算法目錄",
+//             "puzzles" => "# puzzles 智力遊戲",
+//             "fundamentals" => "# fundamentals 基礎目錄",
+//             "bug" => "# bugs 目錄"
 
-// (new sync)->syncDir();
-print_r((new sync)->show());
-// print_r((new sync)->findTable("bug"));
+//         );
+//         return $nametable[$name] ?? $name;
+//     }
+
+// }
+
+
+// (new readwritefile)->syncDir();
+// print_r((new readwritefile)->show());
+// print_r((new readwritefile)->findTable("bug"));
+(new readwritefile)->testwrite5('./8kyu/puzzles/README.md');
+
+
