@@ -200,7 +200,7 @@ class readwritefile
         }
         // print_r($fileData());
     }
-    public function testwrite5(string $path) 
+    public function testwrite5(string $path)
     {
         $output='';
         $data = (new readwritefile)->show();
@@ -214,34 +214,45 @@ class readwritefile
         //         }
         //     }
         // }
-        $file = new \SplFileObject($path, 'r+');
+        $file = (new \SplFileObject($path, 'r+'))->current();
+        $data = $data[$this->findDir(trim($file))];
+        print_r($data);
+        $file=null;
         $his=false;
-        while (!$file->eof()) {
-            $line = $file->fgets();
+        // while (!$file->eof()) {
+        //     $line = $file->fgets();
+        //     echo $line;
             // var_dump(trim($line));
             // if (trim($line) == '約拿') {
             //     for ($i=0;$i<10000;$i++) {
             //         $line .= PHP_EOL.implode($data).PHP_EOL;
             //     }
             // }
-            foreach ($data as $idx => $dir){
-                if(trim($line) === $this->findTable(explode('/',$idx)[1])){
-                    $his=true;
-                }
-                foreach($dir as $notDir => $dirName){
-                    if(trim($line)==="- ".$notDir && $his){
-                        foreach ($dirName as $layer) {
-                            $line.=PHP_EOL."    - ".$layer.PHP_EOL;
-                        }
-                    }
-                }
-            }
-            $output.=$line;
+            // foreach ($data as $idx => $dir){
+            //     if(trim($line) === $this->findTable(explode('/',$idx)[1])){
+            //         $his=true;
+            //     }
+            //     foreach($dir as $notDir => $dirName){
+            //         if(trim($line)==="- ".$notDir && $his){
+            //             // foreach ($dirName as $layer) {
+            //             //     //$line.=PHP_EOL."    - ".$layer.PHP_EOL;
+            //             //     // if(){
+            //             //     //     echo PHP_EOL."    - ".$layer.PHP_EOL;
+            //             //     // }
+            //             //     if ($his) {
+            //             //         var_dump($layer);
+            //             //     }
+            //             // }
+            //             var_dump($notDir);
+            //         }
+            //     }
+            // }
+            // $output.=$line;
             
-        }
-        $file=null;
-        $file =new \SplFileObject($path, 'w+');
-        $file->fwrite($output);
+        // }
+        // $file=null;
+        // $file =new \SplFileObject($path, 'w+');
+        // $file->fwrite($output);
     }
     public function findTable(string $name) : string
     {
@@ -249,12 +260,21 @@ class readwritefile
             "algorithms" => "# algorithms 演算法目錄",
             "puzzles" => "# puzzles 智力遊戲",
             "fundamentals" => "# fundamentals 基礎目錄",
-            "bug" => "# bugs 目錄"
+            "bugs" => "# bugs 目錄"
 
         );
         return $nametable[$name] ?? $name;
     }
-    
+    public function findDir(string $name) : string
+    {
+        $namedir = array(
+          "# bugs 目錄" =>  "8kyu/bugs",
+          "# fundamentals 基礎目錄" => "8kyu/fundamentals",
+          "# algorithms 演算法目錄" => "8kyu/algorithms",
+          "# puzzles 智力遊戲" => "8kyu/puzzles"
+        );
+        return $namedir[$name] ?? $name;
+    }
 }
 
 // class sync{
@@ -275,8 +295,12 @@ class readwritefile
 
 
 // (new readwritefile)->syncDir();
-// print_r((new readwritefile)->show());
-// print_r((new readwritefile)->findTable("bug"));
-(new readwritefile)->testwrite5('./8kyu/puzzles/README.md');
+print_r((new readwritefile)->show());
+// print_r((new readwritefile)->findDir("# bugs 目錄"));
+// (new readwritefile)->testwrite5('./8kyu/puzzles/README.md');
+// (new readwritefile)->testwrite5('./8kyu/bugs/README.md');
+// (new readwritefile)->testwrite5('./8kyu/fundamentals/README.md');
+// (new readwritefile)->testwrite5('./8kyu/algorithms/README.md');
+
 
 
