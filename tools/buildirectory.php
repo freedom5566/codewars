@@ -217,11 +217,26 @@ class readwritefile
         $file = (new \SplFileObject($path, 'r+'))->current();
         $data = $data[$this->findDir(trim($file))];
         print_r($data);
+        // foreach($data as $idx => $value){
+        //     foreach ($value as $qq){
+        //         echo $qq;
+        //     }
+        // }
         $file=null;
         $his=false;
-        // while (!$file->eof()) {
-        //     $line = $file->fgets();
-        //     echo $line;
+        $file = new \SplFileObject($path,'r+');
+
+        while (!$file->eof()) {
+            $line = $file->fgets();
+            
+            foreach($data as $idx =>$dir){
+                if(trim($line) === "- ".$idx){
+                    foreach ($dir as  $dirName) {
+                        $line .=PHP_EOL."        - ".$dirName.PHP_EOL;
+                    }
+                }
+            }
+            // if(trim($line) )
             // var_dump(trim($line));
             // if (trim($line) == '約拿') {
             //     for ($i=0;$i<10000;$i++) {
@@ -247,12 +262,12 @@ class readwritefile
             //         }
             //     }
             // }
-            // $output.=$line;
+            $output.=$line;
             
-        // }
-        // $file=null;
-        // $file =new \SplFileObject($path, 'w+');
-        // $file->fwrite($output);
+        }
+        $file=null;
+        $file =new \SplFileObject($path, 'w+');
+        $file->fwrite($output);
     }
     public function findTable(string $name) : string
     {
@@ -295,12 +310,14 @@ class readwritefile
 
 
 // (new readwritefile)->syncDir();
-print_r((new readwritefile)->show());
+// print_r((new readwritefile)->show());
 // print_r((new readwritefile)->findDir("# bugs 目錄"));
 // (new readwritefile)->testwrite5('./8kyu/puzzles/README.md');
 // (new readwritefile)->testwrite5('./8kyu/bugs/README.md');
 // (new readwritefile)->testwrite5('./8kyu/fundamentals/README.md');
-// (new readwritefile)->testwrite5('./8kyu/algorithms/README.md');
+(new readwritefile)->testwrite5('./8kyu/algorithms/README.md');
+
+
 
 
 
