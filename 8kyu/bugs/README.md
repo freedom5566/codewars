@@ -13,6 +13,8 @@
         - [JennySecretMessage](https://github.com/freedom5566/codewars/tree/master/8kyu/bugs/conditionalStatement%E6%A2%9D%E4%BB%B6/JennySecretMessage)
             - 修復函數
     - 基礎
+
+        - 0FIXME_Replace_all_dots
         - [101dogs](https://github.com/freedom5566/codewars/tree/master/8kyu/bugs/%E5%9F%BA%E7%A4%8E/101dogs)
             - 根據狗的數量來決定回傳甚麼
         - [BasicVariableAssignment](https://github.com/freedom5566/codewars/tree/master/8kyu/bugs/%E5%9F%BA%E7%A4%8E/BasicVariableAssignment)
