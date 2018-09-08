@@ -1,4 +1,13 @@
 # algorithms 演算法目錄
+- 數學
+
+        - 0Points_of_Reflection
+
+
+- 基本語言功能
+
+        - 0ToSquareOrNotToSquare
+
 
 - 陣列
     - [GetTheMeanofanArray](https://github.com/freedom5566/codewars/tree/master/8kyu/algorithms/array%E9%99%A3%E5%88%97/GetTheMeanofanArray)
