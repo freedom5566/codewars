@@ -200,28 +200,15 @@ class readwritefile
         }
         // print_r($fileData());
     }
+
+    // 最終解決方案
     public function testwrite5(string $path)
     {
         $output='';
         $data = (new readwritefile)->show();
-        // print_r($data['8kyu/puzzles']);
-        // foreach ($data as $idx => $dir) {
-        //     echo $this->findTable(explode('/',$idx)[1]);
-        //     foreach ($dir as $notDir => $dirName) {
-        //         foreach ($dirName as $layer) {
-        //             //8kyu/fundamentals/基礎/0Age_Range_Compatibility_Equation
-                    
-        //         }
-        //     }
-        // }
         $file = (new \SplFileObject($path, 'r+'))->current();
         $data = $data[$this->findDir(trim($file))];
         print_r($data);
-        // foreach($data as $idx => $value){
-        //     foreach ($value as $qq){
-        //         echo $qq;
-        //     }
-        // }
         $file=null;
         $his=false;
         $file = new \SplFileObject($path,'r+');
@@ -236,32 +223,6 @@ class readwritefile
                     }
                 }
             }
-            // if(trim($line) )
-            // var_dump(trim($line));
-            // if (trim($line) == '約拿') {
-            //     for ($i=0;$i<10000;$i++) {
-            //         $line .= PHP_EOL.implode($data).PHP_EOL;
-            //     }
-            // }
-            // foreach ($data as $idx => $dir){
-            //     if(trim($line) === $this->findTable(explode('/',$idx)[1])){
-            //         $his=true;
-            //     }
-            //     foreach($dir as $notDir => $dirName){
-            //         if(trim($line)==="- ".$notDir && $his){
-            //             // foreach ($dirName as $layer) {
-            //             //     //$line.=PHP_EOL."    - ".$layer.PHP_EOL;
-            //             //     // if(){
-            //             //     //     echo PHP_EOL."    - ".$layer.PHP_EOL;
-            //             //     // }
-            //             //     if ($his) {
-            //             //         var_dump($layer);
-            //             //     }
-            //             // }
-            //             var_dump($notDir);
-            //         }
-            //     }
-            // }
             $output.=$line;
             
         }
@@ -292,30 +253,15 @@ class readwritefile
     }
 }
 
-// class sync{
-    
-//     public function findTable(string $name) : string
-//     {
-//         $nametable = array(
-//             "algorithms" => "# algorithms 演算法目錄",
-//             "puzzles" => "# puzzles 智力遊戲",
-//             "fundamentals" => "# fundamentals 基礎目錄",
-//             "bug" => "# bugs 目錄"
 
-//         );
-//         return $nametable[$name] ?? $name;
-//     }
-
-// }
-
-
+// 缺乏加入目錄後把目錄的0去掉的功能
 // (new readwritefile)->syncDir();
-// print_r((new readwritefile)->show());
+print_r((new readwritefile)->show());
 // print_r((new readwritefile)->findDir("# bugs 目錄"));
 // (new readwritefile)->testwrite5('./8kyu/puzzles/README.md');
 // (new readwritefile)->testwrite5('./8kyu/bugs/README.md');
 // (new readwritefile)->testwrite5('./8kyu/fundamentals/README.md');
-(new readwritefile)->testwrite5('./8kyu/algorithms/README.md');
+// (new readwritefile)->testwrite5('./8kyu/algorithms/README.md');
 
 
 
