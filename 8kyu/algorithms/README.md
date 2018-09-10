@@ -1,7 +1,8 @@
 # algorithms 演算法目錄
 - 數學
 
-        - 0Points_of_Reflection
+    - [Points of Reflection](https://github.com/freedom5566/codewars/tree/master/8kyu/algorithms/Mathematics%E6%95%B8%E5%AD%B8/Points_of_Reflection)
+        - 數學題，不意外又pass了ORZ
 
 
 - 基本語言功能
