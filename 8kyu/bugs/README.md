@@ -14,7 +14,8 @@
             - 修復函數
     - 基礎
 
-        - 0FIXME_Replace_all_dots
+        - [FIXME Replace all dots](https://github.com/freedom5566/codewars/tree/master/8kyu/bugs/%E5%9F%BA%E7%A4%8E/FIXME_Replace_all_dots)
+            - str_replace 跟 preg_replace 大車拼
         - [101dogs](https://github.com/freedom5566/codewars/tree/master/8kyu/bugs/%E5%9F%BA%E7%A4%8E/101dogs)
             - 根據狗的數量來決定回傳甚麼
         - [BasicVariableAssignment](https://github.com/freedom5566/codewars/tree/master/8kyu/bugs/%E5%9F%BA%E7%A4%8E/BasicVariableAssignment)
