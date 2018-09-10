@@ -7,8 +7,8 @@
 
 - 基本語言功能
 
-        - 0ToSquareOrNotToSquare
-
+    - [To Square or Not To Square](https://github.com/freedom5566/codewars/tree/master/8kyu/algorithms/BasicLanguageFeaturges%E5%9F%BA%E6%9C%AC%E8%AA%9E%E8%A8%80%E5%8A%9F%E8%83%BD/ToSquareOrNotToSquare)
+        - pow 跟 ** (5.6以上才能使用)的知識
 
 - 陣列
     - [GetTheMeanofanArray](https://github.com/freedom5566/codewars/tree/master/8kyu/algorithms/array%E9%99%A3%E5%88%97/GetTheMeanofanArray)
