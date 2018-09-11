@@ -12,7 +12,8 @@
 
 - 函式
 
-        - 0Function1-hello_world
+        - [Function1-hello_world](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/function%E5%87%BD%E5%BC%8F/0Function1-hello_world)
+            - 返回hello world
 
 - 算術 
 
