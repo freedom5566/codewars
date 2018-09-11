@@ -2,7 +2,8 @@
 
 - 整數
 
-        - 0Invert_values
+        - [Invert_values](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/integer%E6%95%B4%E6%95%B8/0Invert_values)
+            - 給出一個數字陣列，請返回所有數的負數或正數
 
 - 幾何學
 
