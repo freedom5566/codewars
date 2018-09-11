@@ -2,12 +2,13 @@
 
 - 整數
 
-        - [Invert_values](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/integer%E6%95%B4%E6%95%B8/0Invert_values)
+        - [Invert values](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/integer%E6%95%B4%E6%95%B8/Invert_values)
             - 給出一個數字陣列，請返回所有數的負數或正數
 
 - 幾何學
 
-        - 0Volume_of_a_Cuboid
+        - [Volume_of_a_Cuboid](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/geometry%E5%B9%BE%E4%BD%95%E5%AD%B8/Volume_of_a_Cuboid)
+            - 計算三角形
 
 - 函式
 
