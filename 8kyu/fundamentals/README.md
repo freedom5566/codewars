@@ -27,7 +27,8 @@
 
 - 形狀建模
 
-        - 0Find_out_whether_the_shape_is_a_cube
+    - [Find_out_whether_the_shape_is_a_cube](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/Shape-Modeling%E5%BD%A2%E7%8B%80%E5%BB%BA%E6%A8%A1/Find_out_whether_the_shape_is_a_cube)
+        - 數學，要計算長方形體積可是只有單邊長怎麼辦？？這題查一下就可以了
 
 - 基礎
 
