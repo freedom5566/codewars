@@ -17,7 +17,8 @@
 
 - 算術 
 
-        - 0Square(n)Sum
+    - [Square(n)Sum](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/arithmetic%E7%AE%97%E8%A1%93/Square(n)Sum)
+        - 開square 用 pow
 
 - 演算法
 
