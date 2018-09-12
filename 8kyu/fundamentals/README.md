@@ -22,7 +22,8 @@
 
 - 演算法
 
-        - 0Keep_Hydrated
+    - [Keep_Hydrated](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/algorithm%E6%BC%94%E7%AE%97%E6%B3%95/Keep_Hydrated)
+        - 情況題，用floor
 
 - 形狀建模
 
