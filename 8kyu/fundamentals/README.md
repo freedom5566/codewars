@@ -85,7 +85,8 @@
         - 給定一個字串跟數字，重複那個字串，次數為給定的數字，用str_repeat
 - 陣列
 
-        - 0Duck_Duck_Goose
+    - [Duck_Duck_Goose](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/arrays%E9%99%A3%E5%88%97/Duck_Duck_Goose)
+        - 有個陣列裏面有a、b、c、d，給一個數，a~d掃，滿足那個數的次數。這題蠻有趣的，我好驚訝一次中
     - [CountOfPositivesSumOfNegatives](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/arrays%E9%99%A3%E5%88%97/CountOfPositivesSumOfNegatives)
         - 給出兩個陣列元素，一個是正數的總和一個是負數的總和
     - [NeedleHaystack](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/arrays%E9%99%A3%E5%88%97/NeedleHaystack)
