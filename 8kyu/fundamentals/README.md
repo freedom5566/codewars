@@ -144,7 +144,9 @@
         - 寫個回圈加個implode
 - 數學
 
-        - 0Calculate_Price_Excluding_VAT
+    - [Calculate_Price_Excluding_VAT](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/math%E6%95%B8%E5%AD%B8/Calculate_Price_Excluding_VAT)
+        - 計算稅價
+
     - [BasicMathematicalOperations](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/math%E6%95%B8%E5%AD%B8/BasicMathematicalOperations)
         - 簡單加減陳除
     - [EvenorOdd](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/math%E6%95%B8%E5%AD%B8/EvenorOdd)
