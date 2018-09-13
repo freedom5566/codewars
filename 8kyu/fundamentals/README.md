@@ -125,7 +125,8 @@
         - 小數點取後兩位，用round就好
 - 函數程式
 
-        - 0PHPFunctions-PassByReference
+    - [PHPFunctions-PassByReference](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/functionalProgramming%E5%87%BD%E6%95%B8%E7%A8%8B%E5%BC%8F/PHPFunctions-PassByReference)
+        - 印象深刻的題目，測試跟題目描述都寫的很用心
     - [CalculateAverage](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/functionalProgramming%E5%87%BD%E6%95%B8%E7%A8%8B%E5%BC%8F/CalculateAverage)
         - 計算陣列中平均值，arraysum除count
 - 指令式程式
