@@ -99,7 +99,8 @@
         - 累乘
 - 基本語言功能
 
-        - 0interpreters_HQ9
+    - [interpreters_HQ9](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/BasicLanguageFeatures%E5%9F%BA%E6%9C%AC%E8%AA%9E%E8%A8%80%E5%8A%9F%E8%83%BD/interpreters_HQ9)
+        - 不懂HQ9問題是指甚麼......不過這並不妨礙我解題，那個歌詞也太長
     - [FindMaximumAndMinimumValuesOfAList](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/BasicLanguageFeatures%E5%9F%BA%E6%9C%AC%E8%AA%9E%E8%A8%80%E5%8A%9F%E8%83%BD/FindMaximumAndMinimumValuesOfAList)
         - 有兩個函式，一個返回最大值一個返回最小值用max跟min就好
     - [RemoveFirstandLastCharacter](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/BasicLanguageFeatures%E5%9F%BA%E6%9C%AC%E8%AA%9E%E8%A8%80%E5%8A%9F%E8%83%BD/RemoveFirstandLastCharacter)
