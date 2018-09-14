@@ -180,7 +180,8 @@
         - 字串反轉
     - [ReversingWordsString](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/strings%E5%AD%97%E4%B8%B2/ReversingWordsString)
         - 要注意空格的字串反轉
-    - TheWide-MouthedFrog
+    - [TheWide-MouthedFrog](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/strings%E5%AD%97%E4%B8%B2/TheWide-MouthedFrog)
+        - 字串轉換小寫對比
              
             
 [回到解題首頁codewars頁面](https://github.com/freedom5566/codewars)
