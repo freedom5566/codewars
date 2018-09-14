@@ -159,7 +159,8 @@
         - 閏年題
 - 字串
 
-        - 0The_Feast_of_Many_Beasts
+    - [The_Feast_of_Many_Beasts](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/strings%E5%AD%97%E4%B8%B2/The_Feast_of_Many_Beasts)
+        - 料理的英文結尾要跟動物名字結尾的一樣才能返回
 
         - 0SumMixedArray
 
