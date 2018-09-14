@@ -178,7 +178,8 @@
         - 把字串所有空白都移除  可用str_replace
     - [ReversedStrings](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/strings%E5%AD%97%E4%B8%B2/ReversedStrings)
         - 字串反轉
-    - ReversingWordsString
+    - [ReversingWordsString](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/strings%E5%AD%97%E4%B8%B2/ReversingWordsString)
+        - 要注意空格的字串反轉
     - TheWide-MouthedFrog
              
             
