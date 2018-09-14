@@ -172,8 +172,9 @@
     - [FakeBinary](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/strings%E5%AD%97%E4%B8%B2/FakeBinary)
         - 給一個字串，你要用0替換5以下的任何數字，用1替換5以上的任何數字，最後回傳字串，這題用了preg_replace。
                 
-    - IsThereaVowelInThere
-    - RemoveStringSpaces
+    - [IsThereaVowelInThere](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/strings%E5%AD%97%E4%B8%B2/IsThereaVowelInThere)
+        - if判斷，best解法很奇異
+    - [RemoveStringSpaces]
     - ReversedStrings
     - ReversingWordsString
     - TheWide-MouthedFrog
