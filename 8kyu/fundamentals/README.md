@@ -174,7 +174,8 @@
                 
     - [IsThereaVowelInThere](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/strings%E5%AD%97%E4%B8%B2/IsThereaVowelInThere)
         - if判斷，best解法很奇異
-    - [RemoveStringSpaces]
+    - [RemoveStringSpaces](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/strings%E5%AD%97%E4%B8%B2/RemoveStringSpaces)
+        - 把字串所有空白都移除  可用str_replace
     - ReversedStrings
     - ReversingWordsString
     - TheWide-MouthedFrog
