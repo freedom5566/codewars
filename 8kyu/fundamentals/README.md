@@ -165,9 +165,9 @@
     - [SumMixedArray](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/strings%E5%AD%97%E4%B8%B2/SumMixedArray)
         - 陣列裏面的數字加起來~
 
-        - 0SortAndStar
-
-        - 0Returning_Strings
+    - [SortAndStar](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/strings%E5%AD%97%E4%B8%B2/SortAndStar)
+        - 比對ASCII
+    - 0Returning_Strings
     - FakeBinary
         - 給一個字串，你要用0替換5以下的任何數字，用1替換5以上的任何數字，最後回傳字串，這題用了preg_replace。
                 
