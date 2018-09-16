@@ -41,7 +41,7 @@
         - 寫switch
 
     - [Simplemultiplication](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Simplemultiplication)
-        - 偶數*8，其他*9
+        - 偶數乘8，其他乘9
     - [Reversedsequence](https://github.com/freedom5566/codewars/blob/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Reversedsequence)
         - 用range來遞減
 
