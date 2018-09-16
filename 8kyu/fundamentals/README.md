@@ -35,8 +35,8 @@
     - [simple_calculator](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/simple_calculator)
         - 寫計算機
 
-        - 0Third_Angle_of_a_Triangle
-
+    - [Third_Angle_of_a_Triangle](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Third_Angle_of_a_Triangle)
+        - 數學問題，給兩個角度，求出第三個角度，挺有意思的
         - 0Switch_it_Up
 
         - 0Simplemultiplication
