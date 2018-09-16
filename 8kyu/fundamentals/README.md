@@ -32,7 +32,8 @@
 
 - 基礎
 
-        - 0simple_calculator
+    - [simple_calculator](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/simple_calculator)
+        - 寫計算機
 
         - 0Third_Angle_of_a_Triangle
 
