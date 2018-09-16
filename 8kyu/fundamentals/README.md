@@ -40,8 +40,8 @@
     - [Switch_it_Up](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Switch_it_Up)
         - 寫switch
 
-        - 0Simplemultiplication
-
+    - [Simplemultiplication](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Simplemultiplication)
+        - 偶數*8，其他*9
         - 0Reversedsequence
 
         - 0Remove_all_exclamation_marks_from_the_end_of_sentence
