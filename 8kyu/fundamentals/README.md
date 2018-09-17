@@ -53,7 +53,8 @@
     - [Grasshopper-Terminal_game_combat_function](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Grasshopper-Terminal_game_combat_function)
         - 返回生命值
 
-        - 0Function3-MultiplyingTwoNumbers
+    - [Function3-MultiplyingTwoNumbers](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Function3-MultiplyingTwoNumbers)
+        - 乘法
 
         - 0Exclamation_marks_series_1_Remove_a_exclamation_mark_from_the_end_of_string
 
