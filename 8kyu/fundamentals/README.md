@@ -45,8 +45,8 @@
     - [Reversedsequence](https://github.com/freedom5566/codewars/blob/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Reversedsequence)
         - 用range來遞減
 
-        - 0Remove_all_exclamation_marks_from_the_end_of_sentence
-
+    - [Remove_all_exclamation_marks_from_the_end_of_sentence](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Remove_all_exclamation_marks_from_the_end_of_sentence)
+        - 句子末尾刪除所有驚嘆號，用rtrim就可以了
         - 0Remove_all_exclamation_marks_from_sentence_but_ensure_a_exclamation_mark_at_the_end_of
 
         - 0Grasshopper-Terminal_game_combat_function
