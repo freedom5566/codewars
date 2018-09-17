@@ -58,7 +58,8 @@
 
     - [Exclamation_marks_series_1_Remove_a_exclamation_mark_from_the_end_of_string](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Exclamation_marks_series_1_Remove_a_exclamation_mark_from_the_end_of_string)
         - 刪除最後一個驚嘆號就好，用substr
-        - 0ExclamationMarksSeries11ReplaceAllVowelToExclamationMarkInTheSentence
+    - [ExclamationMarksSeries11ReplaceAllVowelToExclamationMarkInTheSentence](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/ExclamationMarksSeries11ReplaceAllVowelToExclamationMarkInTheSentence)
+        - 母音轉成驚嘆號
 
         - 0ExclamationMarksSeries
 
