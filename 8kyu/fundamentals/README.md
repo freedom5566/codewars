@@ -47,7 +47,8 @@
 
     - [Remove_all_exclamation_marks_from_the_end_of_sentence](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Remove_all_exclamation_marks_from_the_end_of_sentence)
         - 句子末尾刪除所有驚嘆號，用rtrim就可以了
-        - 0Remove_all_exclamation_marks_from_sentence_but_ensure_a_exclamation_mark_at_the_end_of
+    - [Remove_all_exclamation_marks_from_sentence_but_ensure_a_exclamation_mark_at_the_end_of](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Remove_all_exclamation_marks_from_sentence_but_ensure_a_exclamation_mark_at_the_end_of)
+        - 先把所有驚嘆號拿掉，最後把驚嘆號補回去就好
 
         - 0Grasshopper-Terminal_game_combat_function
 
