@@ -69,7 +69,8 @@
     - [CorrectTheMistakesOfTheCharacterRecognitionSoftware](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/CorrectTheMistakesOfTheCharacterRecognitionSoftware)
         - 修改句子改成正確的，str_replace有驚豔
 
-        - 0Age_Range_Compatibility_Equation
+    - [Age_Range_Compatibility_Equation](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/Age_Range_Compatibility_Equation)
+        - 根據half your age plus seven 公式計算年齡
     - [FindSmallestIntegerArray](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/FindSmallestIntegerArray) 
         - 找到陣列最小的數字，用min即可
     - [FindtheRemainder](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/FindtheRemainder)
