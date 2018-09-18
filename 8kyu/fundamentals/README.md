@@ -64,6 +64,7 @@
     - [ExclamationMarksSeries](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/ExclamationMarksSeries)
         - 給一個字串跟一個數，刪除該字串的驚嘆號達到數的數量，clever我覺得是不錯的implode+explode組合應用
     - [DetermineoffspringsexbasedongenesXXandXYchromosomes](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/DetermineoffspringsexbasedongenesXXandXYchromosomes)
+        - IF 判斷染色體
 
         - 0CorrectTheMistakesOfTheCharacterRecognitionSoftware
 
