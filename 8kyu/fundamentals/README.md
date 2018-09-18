@@ -66,7 +66,8 @@
     - [DetermineoffspringsexbasedongenesXXandXYchromosomes](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/DetermineoffspringsexbasedongenesXXandXYchromosomes)
         - IF 判斷染色體
 
-        - 0CorrectTheMistakesOfTheCharacterRecognitionSoftware
+    - [CorrectTheMistakesOfTheCharacterRecognitionSoftware](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/CorrectTheMistakesOfTheCharacterRecognitionSoftware)
+        - 修改句子改成正確的，str_replace有驚豔
 
         - 0Age_Range_Compatibility_Equation
     - [FindSmallestIntegerArray](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/FindSmallestIntegerArray) 
