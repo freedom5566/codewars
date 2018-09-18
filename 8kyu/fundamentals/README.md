@@ -61,9 +61,9 @@
     - [ExclamationMarksSeries11ReplaceAllVowelToExclamationMarkInTheSentence](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/ExclamationMarksSeries11ReplaceAllVowelToExclamationMarkInTheSentence)
         - 母音轉成驚嘆號
 
-        - 0ExclamationMarksSeries
-
-        - 0DetermineoffspringsexbasedongenesXXandXYchromosomes
+    - [ExclamationMarksSeries](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/ExclamationMarksSeries)
+        - 給一個字串跟一個數，刪除該字串的驚嘆號達到數的數量，clever我覺得是不錯的implode+explode組合應用
+    - [DetermineoffspringsexbasedongenesXXandXYchromosomes](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals/%E5%9F%BA%E7%A4%8E/DetermineoffspringsexbasedongenesXXandXYchromosomes)
 
         - 0CorrectTheMistakesOfTheCharacterRecognitionSoftware
 
