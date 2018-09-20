@@ -13,7 +13,7 @@ For n = 10 and firstNumber = 2, the output should be
     
     circle_of_numbers($n, $first_number); // -> 7
 
-![圖片不見啦~~](https://codefightsuserpics.s3.amazonaws.com/tasks/circleOfNumbers/img/example.png?_tm=1476003938167)
+![圖片不見啦~~](https://i.imgur.com/19YxJpG.png)
 
 # Input/Output
 
