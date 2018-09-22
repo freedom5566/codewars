@@ -22,4 +22,4 @@ this kata was recently attributed to @mclean, which is false (see his comment). 
 
 str_repeat這招學習了
 
-可以指定字串次數 
+可以指定要重複的字串次數 
