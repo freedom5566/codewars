@@ -12,3 +12,5 @@ More similar exercise are found here http://rosalind.info/problems/list-view/ (s
 DNA_strand("ATTGC") // returns "TAACG"
 DNA_strand("GTAT") // returns "CATA"
 ```
+
+strtr 超方便替換字串
