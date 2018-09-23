@@ -46,3 +46,28 @@ The input strings are separated by `,` instead of `\n`. The ouput strings should
 
 Forthcoming katas will study other tranformations.
 
+7kyu的每題我都要想好久.......
+
+這感覺很棒
+
+自己獨立思考、google的感覺
+
+雖然也有點小小的挫折
+
+這一題一開始的思路是
+
+我用explode拆掉
+
+處理完
+
+然後implode組回去
+
+誰知道`implode('\n',$s)`
+
+codewars不管單引號還是雙引號或著補個`\`
+
+一律幫你換行 T_T
+
+明明php online測試 `'\n'`不會被轉成換行阿！！！！！
+
+只好換思路了 
