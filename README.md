@@ -15,7 +15,12 @@
     - [fundamentals 基礎](https://github.com/freedom5566/codewars/tree/master/8kyu/fundamentals)
     - [puzzles 智力遊戲](https://github.com/freedom5566/codewars/tree/master/8kyu/puzzles)
 
-    
+- 7kyu
+    - [algorithms 演算法](https://github.com/freedom5566/codewars/tree/master/7kyu/algorithms)
+    - [fundamentals 基礎](https://github.com/freedom5566/codewars/tree/master/7kyu/fundamentals)
+    - [puzzles 智力遊戲](https://github.com/freedom5566/codewars/tree/master/7kyu/puzzles)
+
+
 突然覺得我是不是要介紹一下codewars的用法阿？ 
 
 資料夾前面+0是還沒有增加到目錄的題目
