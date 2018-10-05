@@ -13,3 +13,24 @@ Note : Content is in fact not necessary in the body of the function "evaporator"
 目前我的程式沒辦法處理超過100或等於100的容器
 
 我想一下怎麼改進
+
+不曉得這樣可不可以
+
+```php
+function deod(int $ml,int $g,int $e):int
+{
+	$j=0;
+	$ml>=100?:$e=$e/100*10;
+	echo $e;
+	while(true){
+		$j++;
+		$ml=$ml-(($ml/100)*$g);
+		//echo $ml.PHP_EOL;
+		if($e>=$ml){
+			return $j;
+		}
+	}
+	
+}
+
+```
