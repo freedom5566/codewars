@@ -14,23 +14,12 @@ Note : Content is in fact not necessary in the body of the function "evaporator"
 
 我想一下怎麼改進
 
-不曉得這樣可不可以
+這題橋了很久一直過不了......
 
-```php
-function deod(int $ml,int $g,int $e):int
-{
-	$j=0;
-	$ml>=100?:$e=$e/100*10;
-	echo $e;
-	while(true){
-		$j++;
-		$ml=$ml-(($ml/100)*$g);
-		//echo $ml.PHP_EOL;
-		if($e>=$ml){
-			return $j;
-		}
-	}
-	
-}
+看了答案
 
-```
+我驚呆了，原來完全不用考慮容器的容量.......
+
+best的答案根本嚇死人
+
+好挫折QQ
