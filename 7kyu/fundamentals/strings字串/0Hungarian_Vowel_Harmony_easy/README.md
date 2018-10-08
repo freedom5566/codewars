@@ -22,3 +22,5 @@ dative("otthon"); // "otthonnak"
 To keep it simple: All words end with a consonant :)
 All strings are unicode strings.
 There are no grammatical exceptions in the tests.
+
+這題我投機取巧了QQ
