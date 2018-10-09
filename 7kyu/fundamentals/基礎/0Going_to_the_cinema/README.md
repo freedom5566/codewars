@@ -25,3 +25,15 @@ movie(500, 15, 0.9) should return 43
 movie(100, 10, 0.95) should return 24 
     (with card the total price is 235, with tickets 240)
 ```
+
+
+我怎麼會忘了do while呢？！！！基礎真的沒打好QQ
+
+
+有個OO的寫法
+
+我震驚了......
+
+雖然實際執行會超過記憶體
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in /home/codewarrior/run.php on line 46
