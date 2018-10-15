@@ -44,3 +44,7 @@ For example, for the multiply function in our "Lesson", your function should pro
 
 [2, 2, false, false, false, true]
 This test case has been included for you.
+
+這個還蠻有趣的，可惜我暫時想不到這個能用在哪XDD
+
+他說可以拿來知道 kata 背後的測試是怎樣的XDDD
