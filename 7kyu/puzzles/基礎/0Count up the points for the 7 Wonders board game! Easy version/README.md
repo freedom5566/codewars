@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/count-up-the-points-for-the-7-wonders-board-game-easy-version
