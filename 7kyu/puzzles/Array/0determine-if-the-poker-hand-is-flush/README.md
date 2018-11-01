@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/determine-if-the-poker-hand-is-flush
