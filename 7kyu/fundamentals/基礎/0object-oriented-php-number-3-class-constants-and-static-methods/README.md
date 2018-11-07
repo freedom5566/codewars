@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/object-oriented-php-number-3-class-constants-and-static-methods
