@@ -38,5 +38,14 @@ function shuffledArray($arr){
     
 }
     
-    
-    
+function shuffledArray($arr){
+    sort($arr);
+    array_splice($arr, array_search(array_sum($arr)/2, $arr), 1);
+    return $arr;
+  }
+  function shuffledArray(array $a): array {
+    for ($i = 0; $i < count($a); $i++) if ($a[$i] === array_sum($b = array_filter($a, function ($e, $j) use ($i) {return $j !== $i;}, ARRAY_FILTER_USE_BOTH))) {
+      sort($b);
+      return $b;
+    }
+  }
