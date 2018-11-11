@@ -12,7 +12,7 @@ function magical_well($a, $b, $n) {
     }
     return $sum;
   }
-  function magical_well($a, $b, $n) {
+function magical_well($a, $b, $n) {
     $total = 0;
     for($i=0; $i <$n; $i++){
       $total += ($a+$i)*($b+$i);
