@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/php-in-action-number-1-introduction-to-superglobals-fundamentals
