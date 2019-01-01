@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/simple-fun-number-320-scratch-lottery-i
