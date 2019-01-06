@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/simple-fun-number-173-a-hero-go-to-the-school
