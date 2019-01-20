@@ -1,0 +1,1 @@
+https://www.codewars.com/kata/fun-with-lists-anymatch-plus-allmatch
