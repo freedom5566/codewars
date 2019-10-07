@@ -1,0 +1,3 @@
+https://www.codewars.com/kata/563a631f7cbbc236cf0000c2
+
+這題其實在鍛鍊英文
